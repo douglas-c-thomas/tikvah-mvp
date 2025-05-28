@@ -1,0 +1,8 @@
+Task,Notes,Effort
+Base layout template + shared styling,base.html with header/footer and {% block %} structure,1
+Search form + results rendering,Search page + results loop rendered together (GET or POST pattern),3
+Provider profile page template,"/provider/{id} or slug route, fully server-rendered",2
+Route wiring + template context,Pass data from Mongo queries to templates,2
+Basic styling (inline or CSS file),"Lightweight styles (flexbox, Tailwind CDN, or inline)",1
+Manual UI testing + polish,"Layout validation, responsive tweaks, anchor flow check",1
+Buffer,Reasonable margin without padding individual lines,3

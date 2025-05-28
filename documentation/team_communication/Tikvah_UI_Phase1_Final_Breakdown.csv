@@ -1,0 +1,8 @@
+Task,Description,Effort (hrs)
+Setup & Scaffolding,"Create base layout, folder structure, and shared styling (e.g., Tailwind, header/footer).",1.5
+Search UI + Results Page,"Build landing page with search bar, search behavior, and mock results list. Include search input, dropdowns, and clickable cards.",5.0
+Provider Profile View,"Create detail page for provider profile with static data (bio, services, etc.), linked from search results.",2.0
+Scripted Data Wiring,Hardcode scripted data flows between routes to simulate realistic interaction without backend.,2.0
+Lightweight Styling,"Apply basic styles and responsive layout using flexbox, Tailwind CDN, or inline CSS.",0.5
+Polish & Interactivity,"Refine UI, test responsiveness, add hover states or transitions to improve perceived quality.",2.0
+Buffer & Feedback Integration,"Time reserved for review, revisions, and adjustments before the 6/3 demo.",2.0
