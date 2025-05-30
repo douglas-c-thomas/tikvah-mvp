@@ -36,3 +36,6 @@ coverage/
 sandboxes/.bolt/
 project/
 Initial Bolt Code.zip
+
+# Ignore sandboxes for now
+sandboxes/
