@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Taylor Morgan",
+    "specialty": "Cardiologist",
+    "location": "Charleston, SC",
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "name": "Dr. Sophia Lee",
+    "specialty": "Dermatologist",
+    "location": "Mount Pleasant, SC",
+    "rating": 4.7
+  }
+]
+
