@@ -32,3 +32,7 @@ logs/
 coverage/
 *.lcov
 
+# Ignore Bolt artifacts
+sandboxes/.bolt/
+project/
+Initial Bolt Code.zip
