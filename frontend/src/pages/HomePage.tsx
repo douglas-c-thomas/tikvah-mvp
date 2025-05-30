@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import SearchBar from '../components/SearchBar';
 import { Heart, ShieldCheck, Clock } from 'lucide-react';
+import MainLayout from "../components/MainLayout";
 
 const HomePage: React.FC = () => {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   return (
-    <div className="min-h-[calc(100vh-64px)] flex flex-col">
+    <MainLayout>
       {/* Hero Section */}
       <section className="flex-grow flex flex-col items-center justify-center px-4 py-16 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -75,7 +76,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+    </MainLayout>
   );
 };
 

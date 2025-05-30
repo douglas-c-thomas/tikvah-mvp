@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import MainLayout from '../components/MainLayout';
 import { 
   MapPin, 
   Phone, 
@@ -33,7 +34,7 @@ const ProviderProfilePage: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 py-16 flex justify-center">
+      <MainLayout>
         <div className="animate-pulse flex flex-col w-full max-w-4xl">
           <div className="h-8 bg-gray-200 rounded w-1/3 mb-6"></div>
           <div className="h-64 bg-gray-200 rounded mb-6"></div>
@@ -45,13 +46,13 @@ const ProviderProfilePage: React.FC = () => {
             <div className="h-32 bg-gray-200 rounded"></div>
           </div>
         </div>
-      </div>
+      </MainLayout>
     );
   }
 
   if (!provider) {
     return (
-      <div className="container mx-auto px-4 py-16 text-center">
+      <MainLayout>
         <h2 className="text-2xl font-bold text-gray-800 mb-4">Provider Not Found</h2>
         <p className="text-gray-600 mb-6">The provider you're looking for doesn't exist or has been removed.</p>
         <button 
@@ -60,12 +61,12 @@ const ProviderProfilePage: React.FC = () => {
         >
           Back to Search
         </button>
-      </div>
+      </MainLayout>
     );
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <MainLayout>
       {/* Back button */}
       <div className="container mx-auto px-4 py-4">
         <button 
@@ -247,7 +248,7 @@ const ProviderProfilePage: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </MainLayout>
   );
 };
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import MainLayout from '../components/MainLayout';
 import SearchBar from '../components/SearchBar';
 import ProviderCard from '../components/ProviderCard';
 import { providers } from '../data/providers';
@@ -150,7 +151,7 @@ const SearchResultsPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <MainLayout>
       <div className="mb-4">
         <SearchBar initialQuery={searchQuery} onSearch={handleSearch} />
       </div>
@@ -263,7 +264,7 @@ const SearchResultsPage: React.FC = () => {
           </div>
         )}
       </div>
-    </div>
+    </MainLayout>
   );
 };
 
