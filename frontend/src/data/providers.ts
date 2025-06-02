@@ -50,9 +50,9 @@ export const providers: Provider[] = [
   {
     id: 2,
     name: "Dr. Michael Chen",
-    specialty: "Cardiologist",
+    specialty: "Biofeedback",
     location: "Charleston, SC",
-    summary: "Interventional cardiologist focused on preventive cardiology and heart disease management with a patient-centered approach.",
+    summary: "Interventional biofeedback focused on preventive cardiology and heart disease management with a patient-centered approach.",
     rating: 4.8,
     bio: "Dr. Michael Chen is an interventional cardiologist with expertise in complex coronary interventions and structural heart disease. After completing his cardiology fellowship at Duke University, he pursued additional training in interventional cardiology at Cleveland Clinic. Dr. Chen is committed to providing comprehensive cardiovascular care with a focus on prevention and management of heart disease.",
     imageUrl: "https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
