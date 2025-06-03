@@ -1,45 +1,79 @@
-import React from 'react';
-import { Heart } from 'lucide-react';
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center mb-4 md:mb-0">
-            <Heart className="h-5 w-5 text-blue-400 mr-2" />
-            <span className="text-lg font-semibold">MediSearch</span>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-sm font-semibold mb-3 uppercase tracking-wider">For Patients</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Find a Provider</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Insurance Info</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Patient Portal</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold mb-3 uppercase tracking-wider">For Providers</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Join Network</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Provider Portal</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Resources</a></li>
-              </ul>
-            </div>
-            <div className="col-span-2 md:col-span-1">
-              <h3 className="text-sm font-semibold mb-3 uppercase tracking-wider">Contact</h3>
-              <p className="text-gray-300 mb-2">1-800-MEDISEARCH</p>
-              <p className="text-gray-300">support@medisearch.example</p>
-            </div>
-          </div>
-        </div>
-        <div className="mt-8 pt-6 border-t border-gray-700 text-center text-gray-400">
-          <p>© 2025 MediSearch. All rights reserved.</p>
-        </div>
-      </div>
+    // <footer className="bg-[#a0bf7c] text-white px-6 py-12">
+    //   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+    //     {/* Left: Logo, tagline, CTA */}
+    //     <div className="flex items-start space-x-4">
+    //       {/* Vertical Divider */}
+    //       <div className="w-1 h-48 bg-[#f2c78a] rounded-sm"></div>
+    //       <div>
+    //         {/* Logo */}
+    //         <img
+    //           src="/logo/tikvah-logo.png"
+    //           alt="Tikvah Health & Wellness"
+    //           className="h-10 mb-4"
+    //         />
+    //         {/* Headline */}
+    //         <h2 className="text-white font-serif text-xl font-bold leading-snug mb-4">
+    //           Our community cares<br />for the whole person.
+    //         </h2>
+    //         {/* CTA */}
+    //         <a
+    //           href="https://www.tikvahhealthandwellness.com/pricing"
+    //           className="inline-block bg-pink-300 text-pink-900 font-semibold px-5 py-2 rounded-full shadow-md hover:bg-pink-400 transition"
+    //         >
+    //           Learn More
+    //         </a>
+    //       </div>
+    //     </div>
+
+    //     {/* Center: Navigation */}
+    //     <div className="grid grid-cols-2 text-sm font-sans gap-y-2">
+    //       <div className="space-y-2">
+    //         <a href="https://www.tikvahhealthandwellness.com" className="hover:underline block">ABOUT</a>
+    //         <a href="https://www.tikvahhealthandwellness.com/pricing" className="hover:underline block">PLANS</a>
+    //         <a
+    //           href="https://tikvahhealthandwellness.practicebetter.io/#/6270463eb864bdac5f6d6f23/forms?f=64f1e0e0a34c0b2c22d8c294"
+    //           target="_blank"
+    //           rel="noopener noreferrer"
+    //           className="hover:underline block"
+    //         >
+    //           GET STARTED
+    //         </a>
+    //         <a href="https://www.tikvahhealthandwellness.com/pricing" className="hover:underline block">PRICING</a>
+    //       </div>
+    //       <div className="space-y-2">
+    //         <a href="https://my.practicebetter.io/#/signin" target="_blank" rel="noopener noreferrer" className="hover:underline block">LOGIN</a>
+    //         <a href="https://www.tikvahhealthandwellness.com/contact" className="hover:underline block">CONTACT</a>
+    //         <a href="https://www.tikvahhealthandwellness.com/faq" className="hover:underline block">FAQ</a>
+    //       </div>
+    //     </div>
+
+    //     {/* Right: Social + credits */}
+    //     <div>
+    //       <h3 className="text-white font-serif text-lg font-bold mb-2">Follow Us</h3>
+    //       <div className="flex space-x-4 mb-4 text-2xl">
+    //         <a href="https://www.instagram.com/tikvah_healthandwellness/" target="_blank" rel="noopener noreferrer">
+    //           <FaInstagram className="hover:text-gray-200 transition" />
+    //         </a>
+    //         <a href="https://www.linkedin.com/company/tikvah-health-and-wellness" target="_blank" rel="noopener noreferrer">
+    //           <FaLinkedin className="hover:text-gray-200 transition" />
+    //         </a>
+    //       </div>
+    //       <p className="text-sm text-white">
+    //         © 2024 by Tikvah.<br />
+    //         Proudly created in collaboration with{" "}
+    //         <a href="https://www.myteamtandem.com/" target="_blank" rel="noopener noreferrer" className="underline">
+    //           Team Tandem
+    //         </a>.
+    //       </p>
+    //     </div>
+    //   </div>
+    // </footer>
+    <footer>
+      <img src="/static/footer.png" alt="Tikvah Header" className="w-full" />
     </footer>
   );
-};
-
-export default Footer;
+}
