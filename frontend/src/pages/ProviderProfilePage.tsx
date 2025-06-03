@@ -23,7 +23,7 @@ const ProviderProfilePage: React.FC = () => {
     // Simulate loading from API
     const timer = setTimeout(() => {
       if (id) {
-        const foundProvider = providers.find(p => p.id === parseInt(id));
+        const foundProvider = providers.find(p => p.id === id);
         setProvider(foundProvider || null);
       }
       setLoading(false);
