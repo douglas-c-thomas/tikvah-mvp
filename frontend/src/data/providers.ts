@@ -20,9 +20,9 @@ export const providers: Provider[] = [
   {
     id: 1,
     name: "Dr. Sarah Johnson",
-    specialty: "Dermatologist",
+    specialty: "Functional Medicine",
     location: "Charleston, SC",
-    summary: "Board-certified dermatologist with 15+ years of experience specializing in skin cancer detection, acne treatments, and cosmetic procedures.",
+    summary: "Board-certified functional medicine provider with 15+ years of experience specializing in skin cancer detection, acne treatments, and cosmetic procedures.",
     rating: 4.9,
     bio: "Dr. Sarah Johnson is a board-certified dermatologist who has been practicing for over 15 years. She completed her medical training at Harvard Medical School and her dermatology residency at Massachusetts General Hospital. Dr. Johnson specializes in the diagnosis and treatment of skin conditions, including skin cancer, acne, eczema, and psoriasis. She is passionate about patient education and preventive care.",
     imageUrl: "https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -50,7 +50,7 @@ export const providers: Provider[] = [
   {
     id: 2,
     name: "Dr. Michael Chen",
-    specialty: "Biofeedback",
+    specialty: "Naturopathy",
     location: "Charleston, SC",
     summary: "Interventional biofeedback focused on preventive cardiology and heart disease management with a patient-centered approach.",
     rating: 4.8,
@@ -81,7 +81,7 @@ export const providers: Provider[] = [
   {
     id: 3,
     name: "Dr. Emily Rodriguez",
-    specialty: "Pediatrician",
+    specialty: "Homeopathy",
     location: "Charleston, SC",
     summary: "Compassionate pediatrician dedicated to providing comprehensive care for children from newborns to adolescents in a family-friendly environment.",
     rating: 4.9,
@@ -111,7 +111,7 @@ export const providers: Provider[] = [
   {
     id: 4,
     name: "Dr. James Wilson",
-    specialty: "Orthopedic Surgeon",
+    specialty: "Naturopathy",
     location: "Charleston, SC",
     summary: "Specialized orthopedic surgeon focusing on sports medicine, joint replacements, and minimally invasive procedures for faster recovery times.",
     rating: 4.7,
@@ -142,7 +142,7 @@ export const providers: Provider[] = [
   {
     id: 5,
     name: "Dr. Lisa Patel",
-    specialty: "Family Medicine",
+    specialty: "Aromatherapy",
     location: "Charleston, SC",
     summary: "Holistic family physician providing comprehensive primary care for patients of all ages with an emphasis on preventive medicine and wellness.",
     rating: 4.8,
@@ -172,7 +172,7 @@ export const providers: Provider[] = [
   {
     id: 6,
     name: "Dr. Robert Thompson",
-    specialty: "Neurologist",
+    specialty: "Homeopathy",
     location: "Charleston, SC",
     summary: "Experienced neurologist specializing in the diagnosis and treatment of neurological disorders including headaches, seizures, and movement disorders.",
     rating: 4.6,
@@ -203,7 +203,7 @@ export const providers: Provider[] = [
   {
     id: 7,
     name: "Dr. Olivia Martinez",
-    specialty: "OB/GYN",
+    specialty: "Reiki",
     location: "Charleston, SC",
     summary: "Compassionate OB/GYN providing comprehensive women's healthcare from adolescence through menopause, with special interest in minimally invasive gynecologic surgery.",
     rating: 4.9,
@@ -233,7 +233,7 @@ export const providers: Provider[] = [
   {
     id: 8,
     name: "Dr. David Kim",
-    specialty: "Gastroenterologist",
+    specialty: "Naturopathy",
     location: "Charleston, SC",
     summary: "Board-certified gastroenterologist with expertise in digestive disorders, endoscopic procedures, and liver disease management.",
     rating: 4.7,
