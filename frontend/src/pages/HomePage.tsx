@@ -15,7 +15,8 @@ const HomePage: React.FC = () => {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">
             Why choose Tikvah Health?
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <img src="/static/why-tikvah.png" alt="Why Tikvah" className="w-full" />
+          {/* <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 icon: '💡',
@@ -42,7 +43,7 @@ const HomePage: React.FC = () => {
                 <p className="text-gray-600">{description}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </MainLayout>
