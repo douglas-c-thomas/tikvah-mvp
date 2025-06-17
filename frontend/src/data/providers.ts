@@ -1,7 +1,8 @@
 export interface Provider {
-  id: number;
+  id: string;
   name: string;
   specialty: string;
+  category: string;
   location: string;
   summary: string;
   rating?: number;
@@ -18,100 +19,101 @@ export interface Provider {
 
 export const providers: Provider[] = [
   {
-    id: 1,
+    id: "52e6b3c0-5179-4ad7-8462-c4aa68cbd8de",
     name: "Dr. Sarah Johnson",
     specialty: "Functional Medicine",
+    category: "Integrative / Whole-Person",
     location: "Charleston, SC",
-    summary: "Board-certified functional medicine provider with 15+ years of experience specializing in skin cancer detection, acne treatments, and cosmetic procedures.",
+    summary: "Board-certified functional medicine provider with 15+ years of experience specializing in personalized, root-cause care for chronic conditions.",
     rating: 4.9,
-    bio: "Dr. Sarah Johnson is a board-certified dermatologist who has been practicing for over 15 years. She completed her medical training at Harvard Medical School and her dermatology residency at Massachusetts General Hospital. Dr. Johnson specializes in the diagnosis and treatment of skin conditions, including skin cancer, acne, eczema, and psoriasis. She is passionate about patient education and preventive care.",
+    bio: "Dr. Sarah Johnson is a board-certified functional medicine practitioner with over 15 years of experience in holistic healthcare. She believes in identifying the root causes of illness rather than just treating symptoms. Dr. Johnson takes a patient-centered approach, using nutrition, lifestyle, advanced lab testing, and integrative therapies to help clients manage autoimmune conditions, hormone imbalances, and digestive disorders. Her training includes an MD from Harvard Medical School, with continued education through the Institute for Functional Medicine. She is passionate about empowering patients with the knowledge and tools to heal and thrive.",
     imageUrl: "https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     services: [
-      "Skin cancer screenings",
-      "Acne treatment",
-      "Eczema management",
-      "Psoriasis treatment",
-      "Botox and fillers",
-      "Laser therapy",
-      "Mole removal",
-      "Skin rejuvenation"
+      "Functional lab testing",
+      "Nutritional counseling",
+      "Hormone balancing",
+      "Chronic illness management",
+      "Gut health optimization",
+      "Detoxification protocols",
+      "Stress and sleep support",
+      "Personalized supplement plans",
+      "Autoimmune condition care"
     ],
     address: "123 Medical Drive, Suite 101, Charleston, SC 29401",
     phone: "(843) 555-1234",
     email: "dr.johnson@charlestondermatology.example",
     education: [
       "MD, Harvard Medical School",
-      "Residency in Dermatology, Massachusetts General Hospital",
-      "Board Certified by the American Board of Dermatology"
+      "Institute for Functional Medicine Certified Practitioner",
+      "Board Certified in Family Medicine"
     ],
     languages: ["English", "Spanish"],
     tags: ["Accepting new patients", "Telehealth"]
   },
   {
-    id: 2,
+    id: "b8f431a3-4b3f-4ef1-a9aa-e6be31a92817",
     name: "Dr. Michael Chen",
     specialty: "Naturopathy",
+    category: "Natural",
     location: "Charleston, SC",
-    summary: "Interventional biofeedback focused on preventive cardiology and heart disease management with a patient-centered approach.",
+    summary: "Holistic naturopathic doctor helping patients naturally restore balance, energy, and resilience with plant-based therapies and preventive care.",
     rating: 4.8,
-    bio: "Dr. Michael Chen is an interventional cardiologist with expertise in complex coronary interventions and structural heart disease. After completing his cardiology fellowship at Duke University, he pursued additional training in interventional cardiology at Cleveland Clinic. Dr. Chen is committed to providing comprehensive cardiovascular care with a focus on prevention and management of heart disease.",
+    bio: "Dr. Michael Chen is a licensed naturopathic doctor dedicated to helping individuals achieve optimal health through natural means. With over 10 years of experience, he specializes in supporting chronic fatigue, hormone imbalance, allergies, and digestive health using nutrition, botanical medicine, homeopathy, and mind-body techniques. Dr. Chen received his degree from Bastyr University and emphasizes patient education, empowering individuals to take ownership of their health through sustainable lifestyle practices.",
     imageUrl: "https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     services: [
-      "Cardiac consultations",
-      "Echocardiography",
-      "Stress testing",
-      "Coronary angiography",
-      "Coronary stent placement",
-      "Heart failure management",
-      "Cholesterol management",
-      "Hypertension treatment"
+      "Botanical medicine",
+      "Nutritional therapy",
+      "Detox programs",
+      "Allergy desensitization",
+      "Stress management",
+      "Hormone support",
+      "Chronic condition care",
+      "Preventive screening"
     ],
     address: "456 Cardiac Center Way, Charleston, SC 29407",
     phone: "(843) 555-2345",
-    email: "dr.chen@heartspecialists.example",
+    email: "dr.chen@naturopathiccenter.example",
     education: [
-      "MD, Johns Hopkins University School of Medicine",
-      "Residency in Internal Medicine, Duke University",
-      "Fellowship in Cardiovascular Disease, Duke University",
-      "Fellowship in Interventional Cardiology, Cleveland Clinic"
+      "ND, Bastyr University",
+      "Licensed Naturopathic Physician",
+      "Member, American Association of Naturopathic Physicians"
     ],
-    languages: ["English", "Mandarin", "Cantonese"],
-    tags: ["In-network", "Same-day appointments"]
+    languages: ["English", "Mandarin"],
+    tags: ["Accepting new patients", "Holistic care"]
   },
   {
-    id: 3,
+    id: "c78cb9a9-2f8b-4cc6-8a83-f058c042876a",
     name: "Dr. Emily Rodriguez",
     specialty: "Homeopathy",
-    location: "Charleston, SC",
-    summary: "Compassionate pediatrician dedicated to providing comprehensive care for children from newborns to adolescents in a family-friendly environment.",
+    category: "Energetic",
+    location: "Mt. Pleasant, SC",
+    summary: "Classical homeopath with a gentle, individualized approach to treating chronic illnesses and restoring vitality.",
     rating: 4.9,
-    bio: "Dr. Emily Rodriguez is a board-certified pediatrician who has been caring for children in the Charleston area for over 10 years. She completed her medical education at the University of North Carolina and her pediatric residency at Children's Hospital of Philadelphia. Dr. Rodriguez provides comprehensive pediatric care from newborn visits to adolescent health, with special interests in asthma management, developmental pediatrics, and preventive care.",
+    bio: "Dr. Emily Rodriguez is a certified classical homeopath specializing in constitutional homeopathy and holistic case management. With a background in integrative health sciences and training from the Northwestern Academy of Homeopathy, she helps patients address long-standing issues such as eczema, anxiety, hormonal imbalances, and behavioral challenges in children. Her work emphasizes gentle, individualized remedies that stimulate the body’s own healing response without harsh side effects.",
     imageUrl: "https://images.pexels.com/photos/5214958/pexels-photo-5214958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     services: [
-      "Well-child visits",
-      "Immunizations",
-      "Sick visits",
-      "School and sports physicals",
-      "Developmental screenings",
-      "Asthma management",
-      "ADHD evaluation and management",
-      "Newborn care"
+      "Constitutional homeopathy",
+      "Chronic condition support",
+      "Behavioral health in children",
+      "Women's hormonal balance",
+      "Allergy desensitization",
+      "Mind-body integration"
     ],
-    address: "789 Children's Way, Charleston, SC 29412",
-    phone: "(843) 555-3456",
-    email: "dr.rodriguez@charlestonpediatrics.example",
+    address: "789 Healing Lane, Mt. Pleasant, SC 29464",
+    phone: "(843) 555-7890",
+    email: "dr.rodriguez@homeopathymtpleasant.example",
     education: [
-      "MD, University of North Carolina School of Medicine",
-      "Residency in Pediatrics, Children's Hospital of Philadelphia",
-      "Board Certified by the American Board of Pediatrics"
+      "Homeopathy Certification, Northwestern Academy of Homeopathy",
+      "BA in Integrative Health Sciences"
     ],
     languages: ["English", "Spanish"],
-    tags: ["Weekend hours", "Telehealth"]
+    tags: ["Natural remedies", "Gentle care"]
   },
   {
-    id: 4,
+    id: "2bd373e9-d73b-4217-b4b8-29c03938581f",
     name: "Dr. James Wilson",
     specialty: "Naturopathy",
+    category: "Natural",
     location: "Charleston, SC",
     summary: "Specialized orthopedic surgeon focusing on sports medicine, joint replacements, and minimally invasive procedures for faster recovery times.",
     rating: 4.7,
@@ -140,9 +142,10 @@ export const providers: Provider[] = [
     tags: ["Minimally invasive", "Same-day surgery"]
   },
   {
-    id: 5,
+    id: "87d3628e-6f55-4493-9ed1-96ff7da30068",
     name: "Dr. Lisa Patel",
     specialty: "Aromatherapy",
+    category: "Energetic",
     location: "Charleston, SC",
     summary: "Holistic family physician providing comprehensive primary care for patients of all ages with an emphasis on preventive medicine and wellness.",
     rating: 4.8,
@@ -170,9 +173,10 @@ export const providers: Provider[] = [
     tags: ["Evening hours", "Telehealth"]
   },
   {
-    id: 6,
+    id: "e5a9588f-76cb-4584-9ebb-7bcf4315fd3c",
     name: "Dr. Robert Thompson",
     specialty: "Homeopathy",
+    category: "Alternative",
     location: "Charleston, SC",
     summary: "Experienced neurologist specializing in the diagnosis and treatment of neurological disorders including headaches, seizures, and movement disorders.",
     rating: 4.6,
@@ -201,9 +205,10 @@ export const providers: Provider[] = [
     tags: ["Research active", "In-network"]
   },
   {
-    id: 7,
+    id: "fb4584ec-4660-4b2f-8a67-fbd1013c3376",
     name: "Dr. Olivia Martinez",
-    specialty: "Reiki",
+    specialty: "Homeopathy",
+    category: "Alternative",
     location: "Charleston, SC",
     summary: "Compassionate OB/GYN providing comprehensive women's healthcare from adolescence through menopause, with special interest in minimally invasive gynecologic surgery.",
     rating: 4.9,
@@ -231,9 +236,10 @@ export const providers: Provider[] = [
     tags: ["Accepting new patients", "Evening hours"]
   },
   {
-    id: 8,
+    id: "2ec47d7d-795a-4eea-b776-1dcda3223e79",
     name: "Dr. David Kim",
     specialty: "Naturopathy",
+    category: "Natural",
     location: "Charleston, SC",
     summary: "Board-certified gastroenterologist with expertise in digestive disorders, endoscopic procedures, and liver disease management.",
     rating: 4.7,
